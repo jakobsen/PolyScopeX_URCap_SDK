@@ -1,0 +1,12 @@
+{
+  "applicationNodes": [
+    {
+      "translationPath": "assets/i18n/",
+      "behaviorURI": "mat.worker.js",
+      "presenterURI": "main.js",
+      "componentTagName": "mat-mat-mat"
+    }
+  ],
+  "programNodes": [],
+  "smartSkills": []
+}

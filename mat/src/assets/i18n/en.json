@@ -1,0 +1,10 @@
+{
+  "application": {
+    "nodes": {
+      "mat-mat-mat": {
+        "title": "Mat",
+        "supportiveText": "Mat - Supportive Text"
+      }
+    }
+  }
+}

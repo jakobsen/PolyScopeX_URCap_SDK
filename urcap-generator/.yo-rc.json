@@ -1,0 +1,30 @@
+{
+  "generator-urcap": {
+    "headless": false,
+    "answers": {
+      "contributionTypes": {
+        "hasWeb": true,
+        "hasDocker": false,
+        "hasRos2": false
+      },
+      "metadata": {
+        "vendorName": "",
+        "vendorId": "mat",
+        "urcapName": "",
+        "urcapId": "mat"
+      },
+      "frontend": {
+        "components": [
+          {
+            "nodeType": "applicationNode",
+            "nodeName": "mat",
+            "tagName": "mat-mat-mat",
+            "componentName": "Mat",
+            "nodeTitle": "Mat"
+          }
+        ],
+        "webFramework": "angular"
+      }
+    }
+  }
+}
