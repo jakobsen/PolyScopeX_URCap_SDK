@@ -1,0 +1,25 @@
+{
+  "versions": {
+    "thirdparty": {
+      "angular": "17.1.2",
+      "angulareslint": "~17.0.1",
+      "rxjs": "7.8.1",
+      "threads": "1.7.0",
+      "typescript": "5.3.3",
+      "zonejs": "0.14.3"
+    },
+    "ur": {
+      "uiangularcomponents": "1.1.8",
+      "contributionapi": "32.1.7",
+      "urcaputils": "1.1.0",
+      "utilitiesunits": "5.6.1",
+      "designtokens": "0.10.0",
+      "uimodels": "0.18.4"
+    }
+  },
+  "docker": {
+    "sampleproxy": "",
+    "developmentimage": "universalrobots/urcap_polyscopex_ros2:3.0.4-humble-dev",
+    "runtimeimage": "universalrobots/urcap_polyscopex_ros2:3.0.4-humble-runtime"
+  }
+}
