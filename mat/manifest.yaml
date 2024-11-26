@@ -6,5 +6,6 @@ metadata:
   version: 1.0.0
 artifacts:
   webArchives:
-  - id: "mat"
-    folder: "mat"
+    - id: "mat"
+      folder: "mat"
+      devUrl: http://host.gateway.ip:4200/
