@@ -5,9 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { createCustomElement } from '@angular/elements';
 import { HttpBackend, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import {MultiTranslateHttpLoader} from 'ngx-translate-multi-http-loader';
+import { MultiTranslateHttpLoader } from 'ngx-translate-multi-http-loader';
 import { PATH } from '../generated/contribution-constants';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import { MatButtonModule } from "@angular/material/button"
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const httpLoaderFactory = (http: HttpBackend) =>
     new MultiTranslateHttpLoader(http, [
@@ -20,6 +23,7 @@ export const httpLoaderFactory = (http: HttpBackend) =>
         MatComponent
     ],
     imports: [
+        MatButtonModule,
         BrowserModule,
         BrowserAnimationsModule,
         UIAngularComponentsModule,
@@ -29,7 +33,7 @@ export const httpLoaderFactory = (http: HttpBackend) =>
             useDefaultLang: false,
         })
     ],
-    providers: [],
+    providers: [provideAnimationsAsync()],
 })
 
 export class AppModule implements DoBootstrap {
@@ -37,7 +41,7 @@ export class AppModule implements DoBootstrap {
     }
 
     ngDoBootstrap() {
-        const matComponent = createCustomElement(MatComponent, {injector: this.injector});
+        const matComponent = createCustomElement(MatComponent, { injector: this.injector });
         customElements.define('mat-mat-mat', matComponent);
     }
 
